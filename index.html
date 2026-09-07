@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exemplo didático de elementos box-level e inline-level em HTML5 e CSS3.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>Modelo de caixas | HTML5 e CSS3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            color: #263238;
+            background-color: #f2f5f7;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            width: 100%;
+            margin: 0 0 24px;
+            padding: 24px;
+            border: 10px solid #37474f;
+            color: #ffffff;
+            background-color: #607d8b;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 32px;
+            color: #37474f;
+        }
+
+        .box-level {
+            padding: 16px;
+            border: 3px solid #00897b;
+            background-color: #e0f2f1;
+        }
+
+        .inline-level {
+            padding: 16px;
+            border: 3px dashed #ef6c00;
+            background-color: #fff3e0;
+        }
+
+        a {
+            padding: 2px 6px;
+            border: 1px solid #d84315;
+            color: #bf360c;
+            background-color: #ffffff;
+            font-weight: bold;
+        }
+
+        code {
+            padding: 2px 5px;
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #b0bec5;
+            color: #546e7a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modelo de caixas</h1>
+    </header>
+
+    <main>
+        <section class="box-level">
+            <h2>Elemento box-level</h2>
+            <p>
+                Parágrafos e títulos são exemplos de elementos
+                <strong>box-level</strong>. Eles ocupam, por padrão, toda a
+                largura disponível e começam em uma nova linha.
+            </p>
+        </section>
+
+        <section class="inline-level">
+            <h2>Elemento inline-level</h2>
+            <p>
+                Links são exemplos de elementos <strong>inline-level</strong>:
+                permanecem na mesma linha do texto. Este é um
+                <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">link para o Curso em Vídeo</a>.
+            </p>
+        </section>
+
+        <h2>O modelo de caixas</h2>
+        <p>
+            Cada elemento pode ser entendido como uma caixa formada por
+            <code>content</code>, <code>padding</code>, <code>border</code> e
+            <code>margin</code>. Neste exemplo, as cores e bordas ajudam a
+            visualizar essas propriedades.
+        </p>
+    </main>
+
+    <footer>
+        Exercício de HTML5 e CSS3 inspirado nas aulas do Professor Guanabara,
+        do Curso em Vídeo.
+    </footer>
+</body>
+</html>

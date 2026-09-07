@@ -1,0 +1,14 @@
+# Variáveis de ambiente locais
+.env
+.env.*
+!.env.example
+
+# Dependências e ferramentas locais
+node_modules/
+
+# Arquivos gerados pelo sistema operacional e pelo editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
