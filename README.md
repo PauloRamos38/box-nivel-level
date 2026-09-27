@@ -1,60 +1,38 @@
-# Modelo de caixas: box-level e inline-level
+# 📦 Box Level e Inline Level
 
-Exercício simples desenvolvido durante os estudos de **HTML5 e CSS3** no
-[Curso em Vídeo](https://www.cursoemvideo.com/), com o Professor Guanabara.
+Este projeto apresenta, de forma prática, a diferença entre elementos **Box-level** e **Inline-level** no HTML e CSS.
 
-## Sobre o exercício
+## 🎯 Objetivo
 
-O objetivo é visualizar como o navegador organiza os elementos em caixas e
-entender a diferença entre:
+Demonstrar como diferentes elementos HTML se comportam no fluxo da página e como suas propriedades de `display` influenciam o layout.
 
-- **Box-level:** ocupa, por padrão, toda a largura disponível e inicia em uma
-  nova linha. Exemplos: `h1`, `h2`, `p` e `section`.
-- **Inline-level:** ocupa apenas o espaço necessário e permanece na mesma
-  linha do conteúdo. O elemento `a` é um exemplo comum.
+## 📚 Conceitos
 
-Também são apresentados os principais componentes do modelo de caixas:
+### 🔲 Box-level
 
-```text
-margin -> border -> padding -> content
-```
+Elementos do tipo **box-level** normalmente ocupam toda a largura disponível e começam em uma nova linha.
 
-## Conteúdos praticados
+Exemplos:
 
-- Estrutura semântica com `header`, `main`, `section` e `footer`;
-- Configuração de idioma, título e descrição da página;
-- Cores, bordas, espaçamento interno e externo;
-- Uso de `box-sizing: border-box`;
-- Links externos com `target="_blank"` e `rel="noopener noreferrer"`;
-- Diferença visual entre elementos de bloco e elementos em linha.
+- `<div>`
+- `<p>`
+- `<h1>`
+- `<section>`
 
-## Como executar
+### 🔹 Inline-level
 
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` no navegador.
+Elementos **inline-level** ocupam apenas o espaço necessário para seu conteúdo e podem permanecer na mesma linha que outros elementos.
 
-Também é possível usar uma extensão como **Live Server** no VS Code para
-acompanhar as alterações automaticamente.
+Exemplos:
 
-## Estrutura
+- `<span>`
+- `<a>`
+- `<strong>`
+- `<em>`
 
-```text
-.
-├── index.html
-├── README.md
-├── .gitignore
-├── .env.example
-└── favicon.svg
-```
+## 🛠️ Tecnologias utilizadas
 
-## Configuração e segurança
+- HTML5
+- CSS3
 
-Este é um projeto estático e não precisa de variáveis de ambiente para
-funcionar. O arquivo `.env` está no `.gitignore` para evitar o envio acidental
-de configurações locais ou segredos. O arquivo `.env.example` serve apenas
-como modelo caso o projeto passe a precisar de configurações no futuro.
-
-## Referência
-
-- [Curso em Vídeo](https://www.cursoemvideo.com/)
-- [MDN: CSS box model](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Styling_basics/Box_model)
+## 🚀 Como executar
